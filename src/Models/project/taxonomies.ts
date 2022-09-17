@@ -3,68 +3,9 @@
  *
  * Project name: Sample Project
  * Environment: Production
- * Project Id: 159e78b3-53be-00bf-4a39-4f5211f2ace4
+ * Project Id: 3ba36257-ccc7-0023-c48e-d2ece553dd07
  */
 export const taxonomies = {
-  /**
-   * Processing
-   */
-  processing: {
-    codename: 'processing',
-    id: 'd351400e-0290-87b2-1413-6c411d8ae5a4',
-    externalId: undefined,
-    name: 'Processing',
-    terms: {
-      wet__washed_: {
-        codename: 'wet__washed_',
-        id: 'a831d60b-ff0e-7df1-61d2-73e851a5deab',
-        externalId: undefined,
-        name: 'Wet (Washed)',
-        terms: {},
-      },
-      dry__natural_: {
-        codename: 'dry__natural_',
-        id: 'ac34eaa7-8463-62b9-825e-66aff9e6b216',
-        externalId: undefined,
-        name: 'Dry (Natural)',
-        terms: {},
-      },
-      semi_dry: {
-        codename: 'semi_dry',
-        id: '908321fa-776d-d441-6a72-76fba3959c1d',
-        externalId: undefined,
-        name: 'Semi-dry',
-        terms: {},
-      },
-    },
-  },
-
-  /**
-   * Product status
-   */
-  product_status: {
-    codename: 'product_status',
-    id: '79b1c5b6-30bc-d076-a236-d9ec9f1ff01b',
-    externalId: undefined,
-    name: 'Product status',
-    terms: {
-      on_sale: {
-        codename: 'on_sale',
-        id: '6352c8bf-8024-9986-8373-35445e1f0d59',
-        externalId: undefined,
-        name: 'On sale',
-        terms: {},
-      },
-      bestseller: {
-        codename: 'bestseller',
-        id: '8d808da3-29de-e608-5699-8565687dd474',
-        externalId: undefined,
-        name: 'Bestseller',
-        terms: {},
-      },
-    },
-  },
-
   /**
    * Sitemap
    */
@@ -171,6 +112,105 @@ export const taxonomies = {
   },
 
   /**
+   * Manufacturer
+   */
+  manufacturer: {
+    codename: 'manufacturer',
+    id: '4ce421e9-c403-eee8-fdc2-74f09392a749',
+    externalId: undefined,
+    name: 'Manufacturer',
+    terms: {
+      aerobie: {
+        codename: 'aerobie',
+        id: 'f04c8552-1b97-a49b-3944-79275622f471',
+        externalId: undefined,
+        name: 'Aerobie',
+        terms: {},
+      },
+      chemex: {
+        codename: 'chemex',
+        id: '16d27bf1-e0f4-8646-0e54-1b71efc6947f',
+        externalId: undefined,
+        name: 'Chemex',
+        terms: {},
+      },
+      espro: {
+        codename: 'espro',
+        id: 'b378225f-6dfc-e261-3848-dd030a6d7883',
+        externalId: undefined,
+        name: 'Espro',
+        terms: {},
+      },
+      hario: {
+        codename: 'hario',
+        id: '6fde9724-5b72-8bc9-6da0-4f0573a54532',
+        externalId: undefined,
+        name: 'Hario',
+        terms: {},
+      },
+    },
+  },
+
+  /**
+   * Product status
+   */
+  product_status: {
+    codename: 'product_status',
+    id: '79b1c5b6-30bc-d076-a236-d9ec9f1ff01b',
+    externalId: undefined,
+    name: 'Product status',
+    terms: {
+      on_sale: {
+        codename: 'on_sale',
+        id: '6352c8bf-8024-9986-8373-35445e1f0d59',
+        externalId: undefined,
+        name: 'On sale',
+        terms: {},
+      },
+      bestseller: {
+        codename: 'bestseller',
+        id: '8d808da3-29de-e608-5699-8565687dd474',
+        externalId: undefined,
+        name: 'Bestseller',
+        terms: {},
+      },
+    },
+  },
+
+  /**
+   * Processing
+   */
+  processing: {
+    codename: 'processing',
+    id: 'd351400e-0290-87b2-1413-6c411d8ae5a4',
+    externalId: undefined,
+    name: 'Processing',
+    terms: {
+      wet__washed_: {
+        codename: 'wet__washed_',
+        id: 'a831d60b-ff0e-7df1-61d2-73e851a5deab',
+        externalId: undefined,
+        name: 'Wet (Washed)',
+        terms: {},
+      },
+      dry__natural_: {
+        codename: 'dry__natural_',
+        id: 'ac34eaa7-8463-62b9-825e-66aff9e6b216',
+        externalId: undefined,
+        name: 'Dry (Natural)',
+        terms: {},
+      },
+      semi_dry: {
+        codename: 'semi_dry',
+        id: '908321fa-776d-d441-6a72-76fba3959c1d',
+        externalId: undefined,
+        name: 'Semi-dry',
+        terms: {},
+      },
+    },
+  },
+
+  /**
    * Personas
    */
   personas: {
@@ -222,46 +262,6 @@ export const taxonomies = {
             terms: {},
           },
         },
-      },
-    },
-  },
-
-  /**
-   * Manufacturer
-   */
-  manufacturer: {
-    codename: 'manufacturer',
-    id: '4ce421e9-c403-eee8-fdc2-74f09392a749',
-    externalId: undefined,
-    name: 'Manufacturer',
-    terms: {
-      aerobie: {
-        codename: 'aerobie',
-        id: 'f04c8552-1b97-a49b-3944-79275622f471',
-        externalId: undefined,
-        name: 'Aerobie',
-        terms: {},
-      },
-      chemex: {
-        codename: 'chemex',
-        id: '16d27bf1-e0f4-8646-0e54-1b71efc6947f',
-        externalId: undefined,
-        name: 'Chemex',
-        terms: {},
-      },
-      espro: {
-        codename: 'espro',
-        id: 'b378225f-6dfc-e261-3848-dd030a6d7883',
-        externalId: undefined,
-        name: 'Espro',
-        terms: {},
-      },
-      hario: {
-        codename: 'hario',
-        id: '6fde9724-5b72-8bc9-6da0-4f0573a54532',
-        externalId: undefined,
-        name: 'Hario',
-        terms: {},
       },
     },
   },

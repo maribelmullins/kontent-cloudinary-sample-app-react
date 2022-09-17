@@ -31,6 +31,7 @@ const Article: React.FC = () => {
         'title',
         'teaser_image',
         'post_date',
+        'cloudinary_image',
         'body_copy',
         'video_host',
         'video_id',
@@ -93,12 +94,20 @@ const Article: React.FC = () => {
       ? currentArticle.elements.title.value
       : formatMessage({ id: 'Article.noTitleValue' });
 
+  let imageUrl;
+  const cloudinaryJSON = currentArticle.elements.cloudinaryImage.value;
+  if (cloudinaryJSON) {
+    const cld = JSON.parse(cloudinaryJSON)[0];
+    imageUrl = (cld['derived'] || cld)['secure_url'];
+  } else {
+    imageUrl = currentArticle.elements.teaserImage.value[0].url;
+  }
   const imageLink =
-    currentArticle?.elements.teaserImage.value[0] !== undefined ? (
+    imageUrl ? (
       <img
         alt={title}
         className="img-responsive"
-        src={currentArticle.elements.teaserImage.value[0].url}
+        src={imageUrl}
         title={title}
       />
     ) : (

@@ -3,7 +3,7 @@
  *
  * Project name: Sample Project
  * Environment: Production
- * Project Id: 159e78b3-53be-00bf-4a39-4f5211f2ace4
+ * Project Id: 3ba36257-ccc7-0023-c48e-d2ece553dd07
  */
 export const collections = {
   /**
