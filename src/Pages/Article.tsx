@@ -98,7 +98,8 @@ const Article: React.FC = () => {
   const cloudinaryJSON = currentArticle.elements.cloudinaryImage.value;
   if (cloudinaryJSON) {
     const cld = JSON.parse(cloudinaryJSON)[0];
-    imageUrl = (cld['derived'] || cld)['secure_url'];
+    imageUrl = cloudinaryJSON;
+    //imageUrl = (cld['derived'] ? cld['derived'][0] : cld)['secure_url'];
   } else {
     imageUrl = currentArticle.elements.teaserImage.value[0].url;
   }
