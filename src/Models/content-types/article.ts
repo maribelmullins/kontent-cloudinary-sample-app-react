@@ -119,6 +119,14 @@ export type Article = IContentItem<{
   sitemap: Elements.TaxonomyElement<Sitemap>;
 
   /**
+   * Cloudinary_image (custom)
+   * Required: false
+   * Id: faef4570-3f5f-4976-a89e-ddb73f4d3401
+   * Codename: cloudinary_image
+   */
+  cloudinaryImage: Elements.CustomElement;
+
+  /**
    * Meta title (text)
    * Required: false
    * Id: 09398b24-61ed-512e-5b5c-affd54a098e5
